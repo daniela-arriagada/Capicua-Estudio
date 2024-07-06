@@ -1,2 +1,12 @@
-@import "generales";
-@import "header"
+@import "./components/generales";
+@import "./components/header";
+@import "./components/footer";
+@import "./sections/home/home";
+@import "./sections/estudio/estudio";
+@import "./sections/colecciones/colecciones";
+@import "./sections/contacto/contacto";
+@import "./sections/workshops/workshops";
+
+
+
+
