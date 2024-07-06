@@ -2,8 +2,5 @@
 
 .hero-workshops{
     background-image: url(/assets/img/146.jpg);
-    background-size: cover;
-    height:380px;
-    width: 100%;
-    align-items: center;
+    @include img-cover-text-center;
 }

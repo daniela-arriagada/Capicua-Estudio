@@ -5,14 +5,8 @@
 }
 
 .hero-studio{
+    @include img-cover-text-center;
     background-image: url(/assets/img/heroStudio.jpg);
-    background-size: cover;
-    background-position:unset;
-    height:380px;
-    width: 100%;
-    text-align: center;
-    align-content: center;
-    text-justify: center;
 }
 
 .grid-container-Estudio{

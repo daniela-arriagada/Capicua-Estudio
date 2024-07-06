@@ -1,0 +1,9 @@
+@mixin img-cover-text-center (){
+    background-size: cover;
+    background-position:unset;
+    height:380px;
+    width: 100%;
+    text-align: center;
+    align-content: center;
+    text-justify: center;
+}

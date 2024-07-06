@@ -1,3 +1,50 @@
+.logo {
+  width: 70px;
+}
+
+header {
+  background-color: #000000;
+  height: 120px;
+  align-content: center;
+}
+
+nav {
+  margin: auto;
+  font-size: 20px;
+}
+
+nav ul li {
+  font-family: "Harmoni";
+  font-size: small;
+  letter-spacing: 0.075em;
+}
+
+.menu-horizontal {
+  list-style: none;
+  display: flex;
+}
+
+.container-header {
+  justify-content: end;
+}
+
+.menu-horizontal li a {
+  display: block;
+  padding: 0 40px;
+  color: white;
+  font-weight: 600;
+  letter-spacing: 0.15em;
+}
+
+.menu-horizontal li:hover {
+  color: white;
+  scale: 1.02;
+}
+
+.menu-horizontal li:hover {
+  display: block;
+}
+
 @font-face {
   font-family: "Harmonia2";
   src: url(/fonts/Harmonia\ Sans\ W01\ Regular.otf);
@@ -86,45 +133,6 @@ input {
 
 body {
   font-family: "Harmonia2";
-}
-
-header .logo {
-  width: 70px;
-}
-header header {
-  background-color: #000000;
-  height: 120px;
-  align-content: center;
-}
-header nav {
-  margin: auto;
-  font-size: 20px;
-}
-header nav ul li {
-  font-family: "Harmoni";
-  font-size: small;
-  letter-spacing: 0.075em;
-}
-header .menu-horizontal {
-  list-style: none;
-  display: flex;
-}
-header .container-header {
-  justify-content: end;
-}
-header .menu-horizontal li a {
-  display: block;
-  padding: 0 40px;
-  color: white;
-  font-weight: 600;
-  letter-spacing: 0.15em;
-}
-header .menu-horizontal li:hover {
-  color: white;
-  scale: 1.02;
-}
-header .menu-horizontal li:hover {
-  display: block;
 }
 
 /* CSS FOOTER*/
@@ -555,7 +563,6 @@ footer .pie-pagina {
 }
 
 .hero-studio {
-  background-image: url(/assets/img/heroStudio.jpg);
   background-size: cover;
   background-position: unset;
   height: 380px;
@@ -563,6 +570,7 @@ footer .pie-pagina {
   text-align: center;
   align-content: center;
   text-justify: center;
+  background-image: url(/assets/img/heroStudio.jpg);
 }
 
 .grid-container-Estudio {
@@ -640,9 +648,12 @@ footer .pie-pagina {
 .hero-workshops {
   background-image: url(/assets/img/146.jpg);
   background-size: cover;
+  background-position: unset;
   height: 380px;
   width: 100%;
-  align-items: center;
+  text-align: center;
+  align-content: center;
+  text-justify: center;
 }
 
 /*# sourceMappingURL=estilos.css.map */
