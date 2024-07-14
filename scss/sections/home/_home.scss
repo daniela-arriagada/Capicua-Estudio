@@ -3,7 +3,7 @@
 /* CONTAINER-HOME */
 
 .contenedor-home{
-    background-image: url(/assets/img/container-home.jpg);
+    background-image: url(../assets/img/container-home.jpg);
     background-size: cover;
     height: 550px;
     width: 100%;
@@ -85,8 +85,7 @@
     gap: 35px;
     height: auto;
     align-items: center;
-    
-    
+        
 }
 .ProductosDestacados button{
     margin-bottom: 30px;
@@ -112,16 +111,18 @@
     object-fit: cover;
 }
 .SectionTextHome p{
-    padding: 0 50px;
     justify-content: center;
     align-items: center;
     justify-items:center ;
     align-content: center;
 }
+.SectionTextHome .Somos{
+    font-size: 42px;
+}
 .contenido-TextHome{ 
     text-align: center;
     align-content: center;
-    padding: 0 50px;
+    padding: 0 70px;
 }
 .contenido-TextHome button{
     font-weight: 600;
@@ -139,11 +140,15 @@
     height: 550px;
 }
 .SectionTextHome p{
+    padding: 0 12px;
     font-size: medium;
     justify-content: center;
     align-items: center;
-    justify-items:center ;
+    justify-items:center;
     align-content: center;
+}
+.SectionTextHome .Somos{
+    font-size: 37px;
 }
 .contenido-TextHome{ 
     text-align: center;
@@ -199,32 +204,32 @@
 
 #img1{
     grid-area: item1;
-    background-image: url(/assets/img/Macetas.jpg);
+    background-image: url(../assets/img/Macetas.jpg);
     background-size:cover;
     background-repeat: no-repeat;
     }
 
 #img2{
     grid-area: item2;
-    background-image: url(/assets/img/Bandejas.jpg);
+    background-image: url(../assets/img/Bandejas.jpg);
     background-size:cover;
     background-repeat: no-repeat;
 }
 #img3{
     grid-area: item3;
-    background-image: url(/assets/img/Joyeros.jpg);
+    background-image: url(../assets/img/Joyeros.jpg);
     background-size:cover;
     background-repeat: no-repeat;
 }
 #img4{
     grid-area: item4;
-    background-image: url(/assets/img/Lamparas.jpg);
+    background-image: url(../assets/img/Lamparas.jpg);
     background-size:cover;
     background-repeat: no-repeat;
 }
 #img5{
     grid-area: item5;
-    background-image: url(/assets/img/Relojes.jpg);
+    background-image: url(../assets/img/Relojes.jpg);
     background-size:cover;
     background-repeat: no-repeat;
 }
@@ -232,7 +237,7 @@
 @media (max-width:768px){
 
     .SectionColeccionesHome{
-        padding: 70px 15px ;
+        padding: 40px 15px ;
    }
     
     .Coleccionesgrid-item h4{
@@ -267,7 +272,7 @@
 /* CSS NEWSLETTER HOME */
 
 .SectionNewsletter{
-    background-image: url(/assets/img/Newsletter.jpg);
+    background-image: url(../assets/img/Newsletter.jpg);
     object-fit: cover;
     height: 269px;
     background-repeat: no-repeat;
@@ -319,7 +324,7 @@
     .container-Newsletter{
         background-color: white;
         display: block;
-        width: 440px;
+        width: auto;
         height: 260px;  
     }
     

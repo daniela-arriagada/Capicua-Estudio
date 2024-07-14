@@ -6,7 +6,7 @@
 
 .hero-studio{
     @include img-cover-text-center;
-    background-image: url(/assets/img/heroStudio.jpg);
+    background-image: url(../assets/img/heroStudio.jpg);
 }
 
 .grid-container-Estudio{
@@ -20,21 +20,21 @@
 }
 #Studio1{
     grid-area: item1;
-    background-image: url(/assets/img/studio1.jpg);
+    background-image: url(../assets/img/studio1.jpg);
     background-size:cover;
     background-repeat: no-repeat;
     }
 
 #Studio2{
     grid-area: item2;
-    background-image: url(/assets/img/studio2.jpg);
+    background-image: url(../assets/img/studio2.jpg);
     background-size:cover;
     background-repeat: no-repeat;
     }
 
 #Studio3{
     grid-area: item3;
-    background-image: url(/assets/img/studio3.jpg);
+    background-image: url(../assets/img/studio3.jpg);
     background-size:cover;
     background-repeat: no-repeat;
 }

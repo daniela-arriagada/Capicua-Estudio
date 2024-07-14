@@ -47,12 +47,12 @@ nav ul li {
 
 @font-face {
   font-family: "Harmonia2";
-  src: url(/fonts/Harmonia\ Sans\ W01\ Regular.otf);
+  src: url(../fonts/Harmonia\ Sans\ W01\ Regular.otf);
   font-weight: regular;
 }
 @font-face {
   font-family: "Harmonia";
-  src: url(/fonts/Harmonia\ Sans\ W01\ Bold.otf);
+  src: url(../fonts/Harmonia\ Sans\ W01\ Bold.otf);
   font-weight: bold;
 }
 * {
@@ -97,12 +97,14 @@ button {
   border: black;
   display: inline-block;
   padding: 8px 15px;
+  font-weight: 400;
   background-color: white;
   transition: transform 0.25s ease-out;
   border-width: 2px;
   border-style: solid;
-  letter-spacing: 0.012em;
+  letter-spacing: 0.045em;
   box-shadow: 3px 3px #000;
+  text-transform: uppercase;
 }
 
 a {
@@ -121,9 +123,15 @@ button a {
   letter-spacing: 0.075em;
 }
 
+form {
+  border-radius: 0;
+}
+
 input {
   border-style: solid black;
+  border-radius: none;
   font-family: "Harmonia2";
+  font-size: medium;
   height: 30px;
   width: 180px;
   height: 30px;
@@ -231,7 +239,7 @@ footer .pie-pagina {
 /*HOME*/
 /* CONTAINER-HOME */
 .contenedor-home {
-  background-image: url(/assets/img/container-home.jpg);
+  background-image: url(../assets/img/container-home.jpg);
   background-size: cover;
   height: 550px;
   width: 100%;
@@ -341,17 +349,20 @@ footer .pie-pagina {
 }
 
 .SectionTextHome p {
-  padding: 0 50px;
   justify-content: center;
   align-items: center;
   justify-items: center;
   align-content: center;
 }
 
+.SectionTextHome .Somos {
+  font-size: 42px;
+}
+
 .contenido-TextHome {
   text-align: center;
   align-content: center;
-  padding: 0 50px;
+  padding: 0 70px;
 }
 
 .contenido-TextHome button {
@@ -367,11 +378,15 @@ footer .pie-pagina {
     height: 550px;
   }
   .SectionTextHome p {
+    padding: 0 12px;
     font-size: medium;
     justify-content: center;
     align-items: center;
     justify-items: center;
     align-content: center;
+  }
+  .SectionTextHome .Somos {
+    font-size: 37px;
   }
   .contenido-TextHome {
     text-align: center;
@@ -427,42 +442,42 @@ footer .pie-pagina {
 
 #img1 {
   grid-area: item1;
-  background-image: url(/assets/img/Macetas.jpg);
+  background-image: url(../assets/img/Macetas.jpg);
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 #img2 {
   grid-area: item2;
-  background-image: url(/assets/img/Bandejas.jpg);
+  background-image: url(../assets/img/Bandejas.jpg);
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 #img3 {
   grid-area: item3;
-  background-image: url(/assets/img/Joyeros.jpg);
+  background-image: url(../assets/img/Joyeros.jpg);
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 #img4 {
   grid-area: item4;
-  background-image: url(/assets/img/Lamparas.jpg);
+  background-image: url(../assets/img/Lamparas.jpg);
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 #img5 {
   grid-area: item5;
-  background-image: url(/assets/img/Relojes.jpg);
+  background-image: url(../assets/img/Relojes.jpg);
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 @media (max-width: 768px) {
   .SectionColeccionesHome {
-    padding: 70px 15px;
+    padding: 40px 15px;
   }
   .Coleccionesgrid-item h4 {
     font-weight: 800;
@@ -490,7 +505,7 @@ footer .pie-pagina {
 }
 /* CSS NEWSLETTER HOME */
 .SectionNewsletter {
-  background-image: url(/assets/img/Newsletter.jpg);
+  background-image: url(../assets/img/Newsletter.jpg);
   object-fit: cover;
   height: 269px;
   background-repeat: no-repeat;
@@ -542,7 +557,7 @@ footer .pie-pagina {
   .container-Newsletter {
     background-color: white;
     display: block;
-    width: 440px;
+    width: auto;
     height: 260px;
   }
   .contenidoNewsletter input {
@@ -564,13 +579,22 @@ footer .pie-pagina {
 
 .hero-studio {
   background-size: cover;
-  background-position: unset;
+  background-position: center;
   height: 380px;
   width: 100%;
   text-align: center;
   align-content: center;
   text-justify: center;
-  background-image: url(/assets/img/heroStudio.jpg);
+  background-image: url(../assets/img/heroStudio.jpg);
+}
+@media (max-width: 768px) {
+  .hero-studio {
+    background-size: cover;
+    height: 180px;
+    width: 100%;
+    text-align: center;
+    text-justify: center;
+  }
 }
 
 .grid-container-Estudio {
@@ -583,21 +607,21 @@ footer .pie-pagina {
 
 #Studio1 {
   grid-area: item1;
-  background-image: url(/assets/img/studio1.jpg);
+  background-image: url(../assets/img/studio1.jpg);
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 #Studio2 {
   grid-area: item2;
-  background-image: url(/assets/img/studio2.jpg);
+  background-image: url(../assets/img/studio2.jpg);
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 #Studio3 {
   grid-area: item3;
-  background-image: url(/assets/img/studio3.jpg);
+  background-image: url(../assets/img/studio3.jpg);
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -644,16 +668,317 @@ footer .pie-pagina {
     row-gap: 15px;
   }
 }
-/* CSS WORKSHOPS */
-.hero-workshops {
-  background-image: url(/assets/img/146.jpg);
+.hero-colecciones {
   background-size: cover;
-  background-position: unset;
+  background-position: center;
   height: 380px;
   width: 100%;
   text-align: center;
   align-content: center;
   text-justify: center;
+  background-image: url(../assets/img/heroColecciones.jpg);
+}
+@media (max-width: 768px) {
+  .hero-colecciones {
+    background-size: cover;
+    height: 180px;
+    width: 100%;
+    text-align: center;
+    text-justify: center;
+  }
+}
+
+/* CSS SECCION COLECCIONES */
+.PageColecciones {
+  display: grid;
+  justify-items: left;
+  padding: 20px 0 20px 0;
+  align-content: flex-start;
+}
+
+.PageColecciones h3 {
+  padding-left: 11px;
+  font-size: xx-large;
+}
+
+.PageColecciones .nombreColeccion h4 {
+  font-family: "Harmonia2";
+  color: #000;
+  font-weight: 800;
+  font-size: medium;
+  padding-left: 4px;
+}
+
+.SectColecciones {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 15px;
+  align-items: center;
+}
+
+.botonColecc button {
+  width: 170px;
+  margin-bottom: 20px;
+  padding: 5px 0;
+}
+
+.imgColeccion img {
+  width: 100%;
+}
+
+.imgColeccion:hover {
+  transform: scale(1.02);
+}
+
+@media (max-width: 768px) {
+  .PageColecciones {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-content: flex-start;
+    padding: 0 20px;
+  }
+  .PageColecciones h3 {
+    padding-left: 11px;
+    font-size: xx-large;
+  }
+  .PageColecciones .nombreColeccion h4 {
+    font-family: "Harmonia2";
+    color: #000;
+    font-weight: 800;
+    font-size: 10px;
+    padding-left: 4px;
+  }
+  .SectColecciones {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    gap: 15px;
+    align-items: center;
+  }
+  .botonColecc button {
+    width: 170px;
+    margin: 10px 20px 40px 20px;
+    padding: 5px 0;
+  }
+  .imgColeccion img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+  }
+  .imgColeccion:hover {
+    transform: scale(1.02);
+  }
+}
+.Contacto {
+  display: flex;
+  padding: 50px 0;
+}
+
+.formcontacto {
+  background-color: rgb(239, 239, 239);
+  align-content: center;
+  padding-left: 95px;
+}
+
+.comentario {
+  height: 150px;
+}
+
+.Contacto form {
+  width: 50%;
+}
+
+.Contacto input {
+  width: 450px;
+  margin: 3px 0;
+}
+
+.Contacto img {
+  width: auto;
+  height: 550px;
+  object-fit: cover;
+  object-position: top;
+}
+
+.Contacto button {
+  margin: 10px 0;
+}
+
+@media (max-width: 768px) {
+  .Contacto {
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 0;
+  }
+  .Contacto form {
+    width: 100%;
+  }
+  .formcontacto {
+    background-color: rgb(239, 239, 239);
+    text-align: left;
+    padding-left: 35px;
+    padding: 20px 0 20px 35px;
+    display: flex;
+    flex-direction: column;
+  }
+  .comentario {
+    height: 150px;
+  }
+  .com-column {
+    display: flex;
+    flex-direction: column;
+  }
+  .Contacto form {
+    width: 100%;
+    display: block;
+  }
+  .Contacto input {
+    width: 315px;
+    margin: 3px 0;
+  }
+  .Contacto img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    object-position: top;
+  }
+  .Contacto button {
+    margin: 10px 0;
+    width: 315px;
+  }
+}
+.map-responsive {
+  display: block;
+  overflow: hidden;
+  padding-bottom: 20%;
+  position: relative;
+  height: 50px;
+  margin-bottom: 45px;
+}
+
+.map-responsive iframe {
+  left: 0;
+  top: 0;
+  width: 100%;
+  position: absolute;
+}
+
+@media (max-width: 768px) {
+  .map-responsive {
+    overflow: hidden;
+    padding-bottom: 40%;
+    position: relative;
+    height: 100px;
+    width: auto;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    justify-items: center;
+    text-align: center;
+    margin: 10px 10px;
+  }
+  .map-responsive iframe {
+    left: 0;
+    top: 0;
+    height: auto;
+    width: 100%;
+    position: absolute;
+  }
+}
+/* CSS WORKSHOPS */
+.hero-workshops {
+  background-image: url(../assets/img/146.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 380px;
+  width: 100%;
+  text-align: center;
+  align-content: center;
+  text-justify: center;
+}
+@media (max-width: 768px) {
+  .hero-workshops {
+    background-size: cover;
+    height: 180px;
+    width: 100%;
+    text-align: center;
+    text-justify: center;
+  }
+}
+
+.container-workshops {
+  display: flex;
+  justify-content: space-between;
+  justify-items: center;
+  margin: 45px;
+}
+
+.container-workshops img {
+  height: 400px;
+  width: 376px;
+  object-fit: cover;
+  background-position: 0cm;
+  justify-content: space-between;
+}
+
+.container-workshops .workshops {
+  width: 376px;
+}
+
+.container-workshops .h3 {
+  margin-top: 10px;
+}
+
+.workshops img {
+  margin-bottom: 15px;
+}
+
+@media (max-width: 768px) {
+  .hero-workshops {
+    background-image: url(/assets/img/146.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 380px;
+    width: 100%;
+    text-align: center;
+    align-content: center;
+    text-justify: center;
+  }
+}
+@media (max-width: 768px) and (max-width: 768px) {
+  .hero-workshops {
+    background-size: cover;
+    height: 180px;
+    width: 100%;
+    text-align: center;
+    text-justify: center;
+  }
+}
+@media (max-width: 768px) {
+  .container-workshops {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    align-items: center;
+    margin: 25px 0;
+  }
+  .container-workshops img {
+    height: 315px;
+    width: 315px;
+    object-fit: cover;
+  }
+  .container-workshops .workshops {
+    width: 315px;
+  }
+  .container-workshops div {
+    padding: 15px 0;
+  }
+  .container-workshops .h3 {
+    margin-top: 20px;
+  }
+  .workshops img {
+    margin: 5px 0;
+  }
 }
 
 /*# sourceMappingURL=estilos.css.map */

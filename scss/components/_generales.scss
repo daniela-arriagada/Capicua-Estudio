@@ -1,10 +1,10 @@
 
 @font-face{
-    font-family: 'Harmonia2'; src: url(/fonts/Harmonia\ Sans\ W01\ Regular.otf);
+    font-family: 'Harmonia2'; src: url(../fonts/Harmonia\ Sans\ W01\ Regular.otf);
     font-weight: regular;
     }
 @font-face{
-    font-family: 'Harmonia'; src: url(/fonts/Harmonia\ Sans\ W01\ Bold.otf);
+    font-family: 'Harmonia'; src: url(../fonts/Harmonia\ Sans\ W01\ Bold.otf);
     font-weight: bold;
 }
 
@@ -47,12 +47,15 @@ button{
     border: black;
     display: inline-block;
     padding: 8px 15px;
+    font-weight: 400;
     background-color: white;
     transition: transform .25s ease-out;
     border-width: 2px;
     border-style: solid;
-    letter-spacing: .012em;
+    letter-spacing: .045em;
     box-shadow: 3px 3px #000;
+    text-transform: uppercase;
+
 }
 
 a{
@@ -70,10 +73,15 @@ button a{
     font-family: 'Harmonia';
     letter-spacing: .075em; 
 }
+form{
+    border-radius: 0;
+}
 
 input{
     border-style: solid black;
+    border-radius: none;
     font-family:'Harmonia2';
+    font-size: medium;
     height: 30px;
     width: 180px;
     height: 30px;
