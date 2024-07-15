@@ -1,38 +1,42 @@
-.logo{
+.logo {
     width: 70px;
 }
 
-header{
+header {
     background-color: #000000;
     height: 120px;
     align-content: center;
 }
 
-nav{    
+nav {
     margin: auto;
     font-size: 20px;
 }
 
-nav ul li{
-    font-family:'Harmoni';
-    font-size: small;    
-    letter-spacing: .075em; 
+nav ul li {
+    font-family: 'Harmoni';
+    font-size: small;
+    letter-spacing: .075em;
 }
-.menu-horizontal{
+
+.menu-horizontal {
     list-style: none;
     display: flex;
 }
-.container-header{
+
+.container-header {
     justify-content: end;
 }
-.menu-horizontal li a{
+
+.menu-horizontal li a {
     display: block;
     padding: 0 40px;
-    color:white;
-    font-weight: 600;  
-    letter-spacing: .15em; 
+    color: white;
+    font-weight: 600;
+    letter-spacing: .15em;
 }
-.menu-horizontal li:hover{
+
+.menu-horizontal li:hover {
     color: white;
     scale: 1.02;
 }

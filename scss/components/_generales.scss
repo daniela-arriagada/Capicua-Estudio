@@ -1,39 +1,46 @@
-
-@font-face{
-    font-family: 'Harmonia2'; src: url(../fonts/Harmonia\ Sans\ W01\ Regular.otf);
+@font-face {
+    font-family: 'Harmonia2';
+    src: url(../fonts/Harmonia\ Sans\ W01\ Regular.otf);
     font-weight: regular;
-    }
-@font-face{
-    font-family: 'Harmonia'; src: url(../fonts/Harmonia\ Sans\ W01\ Bold.otf);
+}
+
+@font-face {
+    font-family: 'Harmonia';
+    src: url(../fonts/Harmonia\ Sans\ W01\ Bold.otf);
     font-weight: bold;
 }
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-} 
-h1{
-    font-family:'Harmonia';
+}
+
+h1 {
+    font-family: 'Harmonia';
     font-weight: 900;
     text-transform: uppercase;
-    color:white;
+    color: white;
     font-size: 50px;
-    text-shadow: 2px 3px 15px rgba(0, 0, 0 , 0.3)}
+    text-shadow: 2px 3px 15px rgba(0, 0, 0, 0.3)
+}
 
-h2{font-family: 'Harmonia2';
+h2 {
+    font-family: 'Harmonia2';
     font-size: 40px;
     font-weight: 300;
 
 }
-h3{
+
+h3 {
     font-family: 'Harmonia';
     font-size: 27px;
     font-weight: 400;
     text-transform: uppercase;
     letter-spacing: .029em;
 }
-h4{
+
+h4 {
     font-family: 'Harmonia2';
     font-size: 18px;
     text-transform: uppercase;
@@ -43,11 +50,11 @@ h4{
 
 }
 
-button{
+button {
     border: black;
     display: inline-block;
     padding: 8px 15px;
-    font-weight: 400;
+    font-weight: 300;
     background-color: white;
     transition: transform .25s ease-out;
     border-width: 2px;
@@ -58,37 +65,38 @@ button{
 
 }
 
-a{
-font-family:'Harmonia2';
-letter-spacing: .09em;
+a {
+    font-family: 'Harmonia2';
+    letter-spacing: .09em;
 }
 
-button:hover{
-transform: scale(1.04);
+button:hover {
+    transform: scale(1.04);
 }
 
-button a{
+button a {
     text-decoration: none;
     color: black;
     font-family: 'Harmonia';
-    letter-spacing: .075em; 
+    letter-spacing: .075em;
 }
-form{
+
+form {
     border-radius: 0;
 }
 
-input{
+input {
     border-style: solid black;
     border-radius: none;
-    font-family:'Harmonia2';
+    font-family: 'Harmonia2';
     font-size: medium;
     height: 30px;
     width: 180px;
     height: 30px;
     font-family: 'Harmonia2';
     padding-left: 10px;
-    }
+}
 
-body{
-    font-family: 'Harmonia2';}
-
+body {
+    font-family: 'Harmonia2';
+}

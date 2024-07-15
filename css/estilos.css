@@ -97,7 +97,7 @@ button {
   border: black;
   display: inline-block;
   padding: 8px 15px;
-  font-weight: 400;
+  font-weight: 300;
   background-color: white;
   transition: transform 0.25s ease-out;
   border-width: 2px;

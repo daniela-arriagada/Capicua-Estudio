@@ -1,63 +1,71 @@
 /* CSS WORKSHOPS */
 
-.hero-workshops{
+.hero-workshops {
     background-image: url(../assets/img/146.jpg);
     @include img-cover-text-center;
 }
-.container-workshops{
+
+.container-workshops {
     display: flex;
     justify-content: space-between;
     justify-items: center;
     margin: 45px;
 
 }
-.container-workshops img{
+
+.container-workshops img {
     height: 400px;
     width: 376px;
     object-fit: cover;
     background-position: 0cm;
-    justify-content:space-between;
-}
-.container-workshops .workshops{
-    width: 376px;
-}
-.container-workshops .h3{
-    margin-top:10px;
+    justify-content: space-between;
 }
 
-.workshops img{
+.container-workshops .workshops {
+    width: 376px;
+}
+
+.container-workshops .h3 {
+    margin-top: 10px;
+}
+
+.workshops img {
     margin-bottom: 15px;
 }
 
-@media (max-width:768px){
-    .hero-workshops{
+@media (max-width:768px) {
+    .hero-workshops {
         background-image: url(/assets/img/146.jpg);
         @include img-cover-text-center;
     }
-    .container-workshops{
+
+    .container-workshops {
         display: flex;
         flex-direction: column;
         margin: 0;
         align-items: center;
-        margin:25px 0;
+        margin: 25px 0;
     }
 
-    .container-workshops img{
+    .container-workshops img {
         height: 315px;
         width: 315px;
         object-fit: cover;
     }
-    .container-workshops .workshops{
+
+    .container-workshops .workshops {
         width: 315px;
     }
-    .container-workshops div{
+
+    .container-workshops div {
         padding: 15px 0;
     }
-    .container-workshops .h3{
-        margin-top:20px;
+
+    .container-workshops .h3 {
+        margin-top: 20px;
     }
-    
-    .workshops img{
+
+    .workshops img {
         margin: 5px 0;
     }
 
