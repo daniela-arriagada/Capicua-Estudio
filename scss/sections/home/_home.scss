@@ -18,6 +18,36 @@
     height: 200px;
     width: 550px;
 }
+@media only screen and (min-width: 768px) and (max-width: 1024px){
+    .contenedor-home {
+        background-image: url(../assets/img/container-home.jpg);
+        background-size: cover;
+        height: 450px;
+        width: 100%;
+        align-content: end;
+    }
+    
+    .container-home div {
+        display: inline-block;
+        position: relative;
+        z-index: 2;
+        margin: 30px 80px;
+        height: 200px;
+        width: 550px;
+    }
+}
+@media only screen and (min-width: 320px) and (max-width: 767px){
+    .contenedor-home {
+        background-image: url(../assets/img/container-home.jpg);
+        background-size: cover;
+        height: 500px;
+        width: 100%;
+        align-content: end;
+    }
+    .contenedor-home h1{
+        font-size: 38px;
+    }
+}
 
 /* CSS PRODUCTOS DESTACADOS HOME */
 
@@ -51,7 +81,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 15px;
-    height: 500px;
+    height: 460px;
     align-items: center;
 }
 
@@ -71,37 +101,102 @@
 .Destacados {
     height: 110px;
 }
-
-@media (max-width: 768px) {
+@media only screen and (min-width: 768px) and (max-width: 1024px){
 
     .SectionDestacados {
+        display: grid;
+        justify-items: center;
+        padding: 30px 0 50px 0;
+        align-content: flex-start;
+    }
+    
+    .SectionDestacados h3 {
+        padding: 1px 1px 1px 1px;
+    }
+    
+    .SectionDestacados .nombreDestacados h4 {
+        font-family: 'Harmonia2';
+        color: #000;
+        font-weight: 700;
+        text-decoration: none;
+        padding-left: 4px;
+    }
+    
+    .SectionDestacados .txtDestacados p {
+        padding-right: 3px;
+        font-family: 'Harmonia2';
+        color: #000;
+        text-decoration: none;
+    }
+    
+    .ProductosDestacados {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 15px;
+        height: auto;
+       display: flex;
+        justify-content:space-between
+    }
+    .ProductosDestacados div{
+        height:380px;
         display: flex;
         flex-direction: column;
-        justify-items: center;
-        align-content: flex-start;
+        justify-content:space-between;
+    }
+    .ProductosDestacados button {
+        width: 150px;
+    }
+    
+    .imgDestacados img {
+        width: 100%; 
+        height: 155px;       
+    }
+    
+    .Destacados:hover {
+        transform: scale(1.02);
+    }
+    
+    .Destacados {
+        height: 110px;
+    }
+}
+@media only screen and (min-width: 320px) and (max-width: 767px) {
 
+    .SectionDestacados {
+        justify-content: flex-start;
+        padding: 10px 0 10px 0;
     }
 
+    .SectionDestacados h3 {
+        
+        font-size: 25px;
+        padding-left: 9px;
+    }
     .SectionDestacados .txtDestacados p {
         padding-right: 3px;
         font-family: 'Harmonia2';
         color: #000;
     }
 
-    .ProductosDestacados {
+    .SectionDestacados .ProductosDestacados div{
+        height: 450px;
         display: flex;
         flex-direction: column;
-        gap: 35px;
+        justify-content: space-between;
+        align-content: space-between;
+        }
+        
+    .ProductosDestacados {
+        display: grid;
+        grid-template-columns: 2fr 2fr;
+        padding: 0 15px 0 15px;
         height: auto;
-        align-items: center;
-
     }
 
     .ProductosDestacados button {
         margin-bottom: 30px;
     }
 }
-
 
 /* CSS TEXT HOME */
 
@@ -143,8 +238,40 @@
 .contenido-TextHome button {
     font-weight: 600;
 }
+@media only screen and (min-width: 576px) and (max-width: 768px){
 
-@media (max-width: 768px) {
+    .SectionTextHome {
+        flex-direction: column;
+    }
+
+    .SectionTextHome img {
+        width: 100vw;
+        height: 410px;
+    }
+
+    .SectionTextHome p {
+        padding: 0;
+        font-size: medium;
+        justify-content: center;
+        align-items: center;
+        justify-items: center;
+        align-content: center;
+    }
+
+    .SectionTextHome .Somos {
+        font-size: 37px;
+    }
+
+    .contenido-TextHome {
+        text-align: center;
+        align-content: center;
+        padding: 40px 50px;
+    }
+
+}
+
+
+@media (max-width:575px) {
 
 
     .SectionTextHome {
@@ -153,7 +280,7 @@
 
     .SectionTextHome img {
         width: 100vw;
-        height: 550px;
+        height: 320px;
     }
 
     .SectionTextHome p {
@@ -180,7 +307,7 @@
 /* CSS COLECCIONES HOME */
 
 .SectionColeccionesHome {
-    padding: 70px 0;
+    padding: 40px 0;
 }
 
 .SectionColeccionesHome h3 {
@@ -262,10 +389,28 @@
     background-repeat: no-repeat;
 }
 
-@media (max-width:768px) {
+@media only screen and (min-width: 576px) and (max-width: 768px){
 
     .SectionColeccionesHome {
         padding: 40px 15px;
+    }
+
+    .grid-container-Colecciones {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 600px 280px 280px;
+        grid-template-areas:
+            "item1 item1"
+            "item2 item3"
+            "item4 item5";
+        gap: 15px;
+    }
+}
+
+@media (max-width:575px) {
+
+    .SectionColeccionesHome {
+        padding: 40px 20px;
     }
 
     .Coleccionesgrid-item h4 {
@@ -282,21 +427,15 @@
         font-weight: 700;
     }
 
-    .Coleccionesgrid-item:hover {
-        transform: scale(1.01);
-        cursor: pointer;
-
-    }
-
     .grid-container-Colecciones {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 355px 185px 185px;
+        grid-template-rows: 355px 180px 185px;
         grid-template-areas:
             "item1 item1"
             "item2 item3"
             "item4 item5";
-        gap: 15px;
+        gap: 10px;
     }
 }
 
@@ -345,12 +484,12 @@
     letter-spacing: .075em;
 
 }
+@media only screen and (min-width: 576px) and (max-width: 768px){
 
-@media (max-width:768px) {
     .SectionNewsletter {
         display: flex;
         flex-direction: column;
-        height: 310px;
+        height: 200px;
         background-repeat: no-repeat;
     }
 
@@ -358,13 +497,48 @@
         background-color: white;
         display: block;
         width: auto;
-        height: 260px;
+        height: 160px;
     }
 
     .contenidoNewsletter input {
         width: 275px;
         height: 30px;
         margin-bottom: 10px;
+    }
+
+    .contenidoNewsletter button {
+        font-family: 'Harmonia';
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: .075em;
+    }
+}
+
+
+@media (max-width:575px) {
+
+    .SectionNewsletter {
+        display: flex;
+        flex-direction: column;
+        height: 280px;
+        background-repeat: no-repeat;
+    }
+
+    .container-Newsletter {
+        background-color: white;
+        display: block;
+        width: auto;
+        height: 220px;
+    }
+
+    .contenidoNewsletter input {
+        width: 275px;
+        height: 30px;
+        margin-bottom: 10px;
+    }
+    .contenidoNewsletter h4 {
+        font-size: 17px;
+        letter-spacing: .055em;
     }
 
     .contenidoNewsletter button {

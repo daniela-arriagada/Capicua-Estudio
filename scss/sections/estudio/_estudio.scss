@@ -55,14 +55,49 @@
     row-gap: 15px;
 }
 
-@media (max-width:768px) {
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+
+    .SectionEstudio {
+        padding: 20px 0;
+    }
+
+    .hero-studio {
+        background-image: url(../assets/img/heroStudio.jpg);
+        background-size: cover;
+        height: 180px;
+        width: 100%;
+        text-align: center;
+        text-justify: center;
+    }
+
+    .grid-container-Estudio {
+        display: grid;
+        grid-template-columns: 2fr 1fr 2fr;
+        grid-template-rows: 270px 380px;
+        grid-template-areas:
+            "item4 item4 item4"
+            "item2 item2 item2";
+        gap: 0;
+    }
+
+    .txtStudio {
+        font-size: medium;
+        padding: 0 35px;
+        text-align: center;
+        align-content: center;
+        row-gap: 15px;
+    }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 767px) {
 
     .SectionEstudio {
         padding: 10px 0;
     }
 
     .hero-studio {
-        background-image: url(/assets/img/heroStudio.jpg);
+        background-image: url(../assets/img/heroStudio.jpg);
         background-size: cover;
         height: 180px;
         width: 100%;
